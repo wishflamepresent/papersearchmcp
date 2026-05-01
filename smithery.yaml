@@ -1,0 +1,11 @@
+runtime: "container"
+build:
+  dockerfile: "Dockerfile"
+  dockerBuildPath: "."
+startCommand:
+  type: "http"
+  path: "/mcp"
+  configSchema:
+    type: "object"
+    properties: {}
+  exampleConfig: {}
